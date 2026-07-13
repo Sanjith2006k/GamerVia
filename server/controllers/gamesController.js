@@ -8,7 +8,7 @@ const mapRawgToGame = (game) => {
     title: game.name,
     image: game.background_image,
     platforms: game.platforms?.map((p) => p.platform.name) || [],
-    price: 0, // Default to 0, will be updated via CheapShark if needed
+    price: null, // Default to null, since price is not fetched in bulk
     rating: game.rating,
     released: game.released,
   };

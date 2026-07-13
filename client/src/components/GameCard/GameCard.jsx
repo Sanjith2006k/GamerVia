@@ -39,7 +39,7 @@ const GameCard = ({ game }) => {
         </Link>
         <div className="mt-auto pt-4 flex items-center justify-between">
           <span className="font-bold text-lg">
-            {game.price === 0 ? "Free" : `$${game.price}`}
+            {game.price === 0 ? "Free" : game.price ? `$${game.price}` : "Check Price"}
           </span>
           <button className="bg-surface-hover hover:bg-primary transition-colors p-2 rounded-lg group/btn text-white">
             <Plus size={18} className="group-hover/btn:scale-110 transition-transform" />
