@@ -1,7 +1,10 @@
 import axios from "axios";
 
 // Determine the base URL depending on the environment
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+let API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+if (API_URL && !API_URL.endsWith("/api")) {
+  API_URL = API_URL.endsWith("/") ? `${API_URL}api` : `${API_URL}/api`;
+}
 
 const api = axios.create({
   baseURL: API_URL,
