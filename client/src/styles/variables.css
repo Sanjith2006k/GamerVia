@@ -1,0 +1,13 @@
+@theme {
+  --color-background: #000000;
+  --color-primary: #52057B;
+  --color-secondary: #892CDC;
+  --color-accent: #BC6FF1;
+  --color-surface: #111111;
+  --color-surface-hover: #1a1a1a;
+  --color-text: #ffffff;
+  --color-text-muted: #a1a1aa;
+  
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}

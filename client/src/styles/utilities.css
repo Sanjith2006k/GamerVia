@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+@reference "./variables.css";
+
+@layer utilities {
+  .glass {
+    @apply bg-surface/60 backdrop-blur-md border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(137, 44, 220, 0.5);
+  }
+  
+  .glow-purple-hover:hover {
+    box-shadow: 0 0 30px rgba(188, 111, 241, 0.7);
+  }
+}
