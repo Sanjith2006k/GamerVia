@@ -43,4 +43,11 @@ export const gameService = {
   },
 };
 
+export const healthService = {
+  checkHealth: async () => {
+    const response = await api.get("/health");
+    return response.data;
+  },
+};
+
 export default api;

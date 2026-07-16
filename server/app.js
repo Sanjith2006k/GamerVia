@@ -12,6 +12,7 @@ app.use(express.json());
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/games", require("./routes/gamesRoutes"));
+app.get("/api/health", (req, res) => res.status(200).json({ status: "ok" }));
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
